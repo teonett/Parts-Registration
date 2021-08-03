@@ -10,6 +10,22 @@
     <Folder Include="Handlers\" />
     <Folder Include="Services\" />
     <Folder Include="Repositories\" />
+    <Folder Include="Commands\Contracts\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Microsoft.Extensions.DependencyInjection" />
+    <None Remove="NetHacksPack.Core" />
+    <None Remove="Commands\Contracts\" />
+    <None Remove="Flunt" />
+    <None Remove="NetHacksPack.Core.Extensions.Events" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
+    <PackageReference Include="Flunt" Version="1.0.5" />
+    <PackageReference Include="NetHacksPack.Core.Extensions.Events" Version="1.0.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Parts.Registration.Core\Parts.Registration.Core.csproj" />
+  </ItemGroup>
 </Project>

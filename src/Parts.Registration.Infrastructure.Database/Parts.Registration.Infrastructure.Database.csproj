@@ -10,4 +10,17 @@
     <Folder Include="DependencyInjection\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Parts.Registration.Core\Parts.Registration.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Microsoft.EntityFrameworkCore.Relational" />
+    <None Remove="NetHacksPack.Database.Extension.EF" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="5.0.8" />
+    <PackageReference Include="NetHacksPack.Database.Extension.EF" Version="1.0.1" />
+  </ItemGroup>
 </Project>
